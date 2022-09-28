@@ -1,0 +1,50 @@
+<h1 mat-dialog-title> Add Loan Form</h1>
+<div mat-dialog-content>
+   <form [formGroup]="addLoanForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Loan Type</mat-label>
+        <input formControlName="loanType"  matInput placeholder="Loan Type">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Lender</mat-label>
+        <input formControlName="lender" matInput placeholder="Lender">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Loan Amount</mat-label>
+        <input formControlName="loanAmount" matInput placeholder="Loan Amount">
+    </mat-form-field>
+   
+    <mat-form-field appearance="outline">
+        <mat-label>Loan Issue Date</mat-label>
+        <input formControlName="loanIssueDate" matInput [matDatepicker]="picker1">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Payment Due Date</mat-label>
+        <input formControlName="paymentDue" matInput [matDatepicker]="picker2">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+   </form>
+</div>
+
+<div mat-dialog-action [align]="'end'">
+<button mat-raised-button color="warn" mat-dialog-close>Close</button>
+<button style="margin-left: 10px;" mat-raised-button color="primary" (click)="addLoan()">{{actionBtn}}</button>
+</div>
+<!--       
+    <mat-form-field appearance="outline">
+        <mat-label> Product category</mat-label>
+        <mat-select  placeholder="category">
+            <mat-option [value]="">Fruits</mat-option>
+            <mat-option [value]="">Vegies</mat-option>
+            <mat-option [value]="">Electronics</mat-option>
+            <mat-option [value]="">Clothes</mat-option>
+
+        </mat-select>
+    </mat-form-field> -->
+
