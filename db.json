@@ -1,0 +1,41 @@
+{
+  "loanList": [
+    {
+      "loanType": "lllllllll",
+      "lender": "dhdg",
+      "loanAmount": "454",
+      "loanIssueDate": "2022-09-28T05:00:00.000Z",
+      "paymentDue": "2026-11-19T06:00:00.000Z",
+      "loanStatus": "Active",
+      "id": 2
+    },
+    {
+      "loanType": "yet",
+      "lender": "yerrt",
+      "loanAmount": "355",
+      "loanIssueDate": "2022-09-30T05:00:00.000Z",
+      "paymentDue": "2022-09-17T05:00:00.000Z",
+      "loanStatus": "Active",
+      "id": 3
+    },
+    {
+      "loanType": "aaaa",
+      "lender": "xxxxx",
+      "loanAmount": "789",
+      "loanIssueDate": "2022-09-30T05:00:00.000Z",
+      "paymentDue": "2022-09-30T05:00:00.000Z",
+      "loanStatus": "Active",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
